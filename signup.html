@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Mart</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: cadetblue;
+        
+    }
+    form{ border: 3px solid ;}
+    input[type=text],[type=password],[type=Email],[type=Region]{ 
+        width: fit-content;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    button{
+        background-color: rgba(4, 64, 64, 0.723);
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+        width: max-content;
+    }
+    button:hover {
+        opacity: 0.8;
+    }
+.imagecontainer{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.Ford{
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+</style>
+<body>
+    <h2> Sign up </h2>
+    <div>
+        <form action="">
+            <div class="imagecontainer">
+                <img src="Images/Ford.png" alt="Ford" class="Ford">
+
+            </div>
+            <div>
+                <label for="Firstname"><br>First name</label><br>
+        <input type="text" name="First name" required>
+        <br>
+        <label for="Lastname"><br>Last Name</label><br>
+        <input type="text"  name="Last Name" required>
+        <br>
+        <label for="Username"><br>Username</label><br>
+        <input type="text"  name="Username" required>
+        <br>
+        <label for="Location"> Region</label><br>
+        <select name="Region" id=""> <br>
+            <option value="">Select Region:</option>
+            <option value="England">England</option>
+            <option value="Scotland">Scotland</option>
+            <option value="Wales    ">Wales</option>
+            <option value="Northern Ireland"> Northern Ireland</option>
+        </select><br>
+
+        <label for="Email Address"><br>Email Address</label><br>
+        <input type="Email" name="Email" required><br>
+        <label for="Password"><br>Password</label><br>
+        <input type="password"  name="Password" required><br>
+        <br>
+        <button type="submit"> <a href="index.html">Login</a></button> 
+        <label>
+            <input type="checkbox" checked="checked" name="remember">
+            Remember me
+        </label>
+        <div>
+            <p>Already have an account? <a href="signin.html">SignIn</a></p>
+            
+
+        </div>
+    </form>
+    </div>
+</body>
+</html>
